@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "flask-runapp": "Scripts\\python -m flask --app app run -p 5000",
+    "flask-runapp": "pip3 install -r requirements.txt && python3 -m flask --app app run -p 5000",
     "next-dev": "next dev",
     "dev": "concurrently \"npm run next-dev\" \"npm run flask-runapp\"",
     "build": "next build",
