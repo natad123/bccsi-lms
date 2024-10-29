@@ -6,7 +6,7 @@
   "scripts": {
     "flask-runapp": "pip3 install -r requirements.txt && python3 -m flask --app app run -p 5000",
     "next-dev": "next dev",
-    "dev": "concurrently \"npm run next-dev\" \"npm run flask-runapp\"",
+    "dev": "concurrently \"pnpm run next-dev\" \"pnpm run flask-runapp\"",
     "build": "next build",
     "start": "next start",
     "postinstall": "npx prisma generate",
